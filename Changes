@@ -4,3 +4,5 @@ Revision history for Perl extension Text::Flowchart::Lingua.
 	- original version; created by h2xs 1.21 with options
 		-XA Text::Flowchart::Lingua
 
+0.02  Sun, 30 Mar 2003 20:06:56 +0800
+	- typos in documentation fixed

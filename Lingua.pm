@@ -2,7 +2,7 @@ package Text::Flowchart::Lingua;
 
 use 5.006;
 use strict;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Text::Flowchart::Lingua::Lexer;
 use Text::Flowchart::Lingua::Parser;
@@ -56,8 +56,6 @@ Text::Flowchart::Lingua - A simple language for Text::Flowchart
 
 L<Text::Flowchart> is a tool for generating flowcharts in ASCII style. However, users have to process some repeated things themselves, such as variable declaration, parentheses. As to this point, L<Text::Flowchart::Lingua> defines a simple language for users to create text flowcharts much easier.
 
-This module provides two styles of interface for users to choose, as shown in L<SYNOPSIS>.
-
 Now, let's get down to the language. See an example.
 
 Initialize a flowchart.
@@ -67,7 +65,7 @@ Initialize a flowchart.
 Let 'begin' be a box.
 
         begin = box :
-                string  => "BEGIN",
+                string  => "ALPHA",
                 x_coord => 0,
                 y_coord => 0,
                 width   => 9,
@@ -97,7 +95,7 @@ For details of the functions and parameters, see L<Text::Flowchart>
 
 =over 5
 
-=item * Variables does not come with the dollar sign ($).
+=item * Variables do not come with the dollar sign ($).
 
 =item * Users can treat an initialized variable as a function for modification variable's attributes
 
@@ -117,7 +115,7 @@ L<Text::Flowchart>
 
 =head1 CAVEATS
 
-This is an experimental. Use it at your own risk.
+This is an experimental design. Use it at your own risk.
 
 =head1 TO DO
 
